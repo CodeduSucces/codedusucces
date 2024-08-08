@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Parents - LE CODE DU SUCCÈS SAINT ALEXANDRE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8dc; /* couleur de fond jaune clair */
+        }
+
+        header {
+            background-color: #ffeb3b; /* couleur de fond jaune */
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4caf50; /* couleur verte */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-box {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h2 {
+            color: #4caf50; /* couleur verte */
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-box ul li {
+            margin: 10px 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container a, .login-button {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form label {
+            margin: 10px 0 5px;
+        }
+
+        .login-form input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-form a {
+            text-align: right;
+            color: #4caf50;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .login-form a:hover {
+            text-decoration: underline;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .show-more {
+            color: #4caf50; /* couleur verte */
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        footer {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="niveaux.html">Niveaux d'enseignement</a></li>
+                <li><a href="informations-administratives.html">Informations administratives</a></li>
+                <li><a href="espace-parents.html">Espace parents</a></li>
+                <li><a href="espace-eleves.html">Espace élèves</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Espace Parents</h1>
+        <div class="grid-container">
+            <div class="info-box">
+                <h2>Connexion à l'espace parent</h2>
+                <form class="login-form">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password">
+                    <a href="#">Mot de passe oublié ?</a>
+                    <div class="button-container">
+                        <button type="submit" class="login-button">Se connecter</button>
+                    </div>
+                </form>
+            </div>
+            <div class="info-box">
+                <h2>Fonctionnalités de l'espace parent</h2>
+                <ul>
+                    <li>Suivi des résultats scolaires de votre enfant</li>
+                    <li>Consultation de l'emploi du temps</li>
+                    <li>Accès aux bulletins scolaires</li>
+                    <li>Communication avec les enseignants</li>
+                    <li>Suivi des absences et retards</li>
+                    <li>Paiement des frais de scolarité en ligne</li>
+                    <li>Inscription aux réunions parents-professeurs</li>
+                    <li>Accès aux informations sur les événements scolaires</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Actualités et événements</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Événement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2 septembre 2024</td>
+                            <td>Réunion de rentrée : Présentation de l'équipe pédagogique et des objectifs de l'année scolaire.</td>
+                        </tr>
+                        <tr>
+                            <td>15 octobre 2024</td>
+                            <td>Conférence sur l'orientation : Venez découvrir les différentes filières et les opportunités de carrière pour vos enfants.</td>
+                        </tr>
+                        <tr>
+                            <td>10 juin 2024</td>
+                            <td>Fête de l'école : Spectacles, expositions et activités pour célébrer la fin de l'année scolaire.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="info-box">
+                <h2>Ressources pour les parents</h2>
+                <ul>
+                    <li><a href="guide-des-parents.pdf">Guide des parents</a></li>
+                    <li><a href="calendrier-scolaire.pdf">Calendrier scolaire</a></li>
+                    <li><a href="reglement-interieur.pdf">Règlement intérieur</a></li>
+                    <li><a href="menu-cantine.pdf">Menu de la cantine</a></li>
+                    <li><a href="activites-extrascolaires.pdf">Activités extrascolaires</a></li>
+                    <li><a href="association-parents-eleves.pdf">Association des parents d'élèves</a></li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Foire aux questions (FAQ)</h2>
+                <ul>
+                    <li>
+                        <span class="show-more" onclick="toggleVisibility('faq1')">Comment puis-je suivre les progrès de mon enfant ?</span>
+                        <p id="faq1" class="hidden">Vous pouvez suivre les progrès de votre enfant en vous connectant régulièrement à l'espace parent. Vous y trouverez les notes, les bulletins scolaires et les commentaires des enseignants.</p>
+                    </li>
+                    <li>
+                        <span class="show-more" onclick="toggleVisibility('faq2')">Comment signaler une absence ?</span>
+                        <p id="faq2" class="hidden">Pour signaler une absence, vous pouvez utiliser le formulaire en ligne disponible dans l'espace parent ou contacter directement le secrétariat de l'école par téléphone.</p>
+                    </li>
+                    <li>
+                        <span class="show-more" onclick="toggleVisibility('faq3')">Comment prendre rendez-vous avec un enseignant ?</span>
+                        <p id="faq3" class="hidden">Vous pouvez demander un rendez-vous avec un enseignant via la messagerie de l'espace parent ou en contactant le secrétariat de l'école qui organisera la rencontre.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        © 2024 LE CODE DU SUCCÈS SAINT ALEXANDRE. Tous droits réservés. | <a href="mentions-legales.html">Mentions légales</a> | <a href="politique-confidentialite.html">Politique de confidentialité</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations administratives - LE CODE DU SUCCÈS SAINT ALEXANDRE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8dc; /* couleur de fond jaune clair */
+        }
+
+        header {
+            background-color: #ffeb3b; /* couleur de fond jaune */
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4caf50; /* couleur verte */
+        }
+
+        .section {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #4caf50; /* couleur verte */
+        }
+
+        .section p, .section ul {
+            margin: 10px 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .download-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .download-links ul li {
+            margin: 5px 0;
+        }
+
+        .download-links ul li a {
+            color: #4caf50; /* couleur verte */
+            text-decoration: none;
+        }
+
+        .download-links ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="niveaux.html">Niveaux d'enseignement</a></li>
+                <li><a href="informations-administratives.html">Informations administratives</a></li>
+                <li><a href="espace-parents.html">Espace parents</a></li>
+                <li><a href="espace-eleves.html">Espace élèves</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Informations administratives</h1>
+        
+        <div class="section">
+            <h2>Inscriptions et Admissions</h2>
+            <ul>
+                <li>Procédure d'inscription</li>
+                <li>Documents requis</li>
+                <li>Dates limites</li>
+                <li>Frais de scolarité</li>
+                <li>Bourses et aides financières</li>
+            </ul>
+            <div class="button-container">
+                <a href="info-inscriptions.html">En savoir plus</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Calendrier Scolaire</h2>
+            <ul>
+                <li>Dates de rentrée et de sortie</li>
+                <li>Vacances scolaires</li>
+                <li>Jours fériés</li>
+                <li>Événements importants</li>
+            </ul>
+            <div class="button-container">
+                <a href="calendrier.html">Voir le calendrier</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Règlement Intérieur</h2>
+            <div class="button-container">
+                <a href="reglement.html">Consulter le règlement</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Transport Scolaire</h2>
+            <ul>
+                <li>Lignes de bus scolaires</li>
+                <li>Horaires</li>
+                <li>Tarifs</li>
+                <li>Inscription au transport</li>
+            </ul>
+            <div class="button-container">
+                <a href="transport.html">Information transport</a>
+            </div>
+        </div>
+        
+        <div class="section download-links">
+            <h2>Documents Administratifs</h2>
+            <ul>
+                <li><a href="documents/formulaire-inscription.pdf" download>Formulaire d'inscription</a></li>
+                <li><a href="documents/fiche-renseignements.pdf" download>Fiche de renseignements</a></li>
+                <li><a href="documents/autorisation-sortie.pdf" download>Autorisation de sortie</a></li>
+                <li><a href="documents/demande-bourse.pdf" download>Demande de bourse</a></li>
+                <li><a href="documents/reglement-interieur.pdf" download>Règlement intérieur</a></li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Foire aux questions (FAQ)</h2>
+            <ul>
+                <li>Comment puis-je inscrire mon enfant à l'école ?</li>
+                <li>Quels sont les horaires de l'école ?</li>
+                <li>Comment puis-je contacter l'administration de l'école ?</li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2024 LE CODE DU SUCCÈS SAINT ALEXANDRE. Tous droits réservés.</p>
+        <p><a href="mentions-legales.html">Mentions légales</a> | <a href="politique-confidentialite.html">Politique de confidentialité</a></p>
+    </footer>
+</body>
+</html>

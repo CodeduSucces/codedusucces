@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niveaux d'enseignement - LE CODE DU SUCCÈS SAINT ALEXANDRE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8dc; /* couleur de fond jaune clair */
+        }
+
+        header {
+            background-color: #ffeb3b; /* couleur de fond jaune */
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4caf50; /* couleur verte */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item h2 {
+            color: #4caf50; /* couleur verte */
+        }
+
+        .grid-item p, .grid-item ul {
+            margin: 10px 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .show-more {
+            color: #4caf50; /* couleur verte */
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/logo_code_du_succes.png" alt="logo_code_du_succes">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="niveaux.html">Niveaux d'enseignement</a></li>
+                <li><a href="informations-administratives.html">Informations administratives</a></li>
+                <li><a href="espace-parents.html">Espace parents</a></li>
+                <li><a href="espace-eleves.html">Espace élèves</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Niveaux d'enseignement</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Maternelle</h2>
+                <p>Informations sur la maternelle.</p>
+                <div class="button-container">
+                    <a href="info-maternelle.html">En savoir plus</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Primaire</h2>
+                <p>Informations sur le primaire.</p>
+                <div class="button-container">
+                    <a href="info-primaire.html">En savoir plus</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Secondaire</h2>
+                <p>Informations sur le secondaire.</p>
+                <div class="button-container">
+                    <a href="info-secondaire.html">En savoir plus</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>Formation professionnelle</h2>
+                <p>Informations sur la formation professionnelle.</p>
+                <div class="button-container">
+                    <a href="info-formation-professionnelle.html">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="level">
+            <h2>Nos approches pédagogiques</h2>
+            <ul>
+                <li>Pédagogie différenciée: Nous adaptons notre enseignement aux besoins individuels de chaque élève.</li>
+                <li>Apprentissage par projets: Nos élèves développent leurs compétences à travers des projets concrets et stimulants.</li>
+                <li>Éducation positive: Nous encourageons et valorisons les progrès de chaque élève pour favoriser leur épanouissement.</li>
+                <li>Ouverture internationale: Nous proposons des échanges linguistiques et culturels pour développer l'ouverture d'esprit de nos élèves.</li>
+            </ul>
+        </div>
+
+        <div class="level">
+            <h2>Options et spécialités</h2>
+            <ul>
+                <li>
+                    <span class="show-more" onclick="toggleVisibility('college')">Collège</span>
+                    <ul id="college" class="hidden">
+                        <li>Classe bilangue (Anglais-Allemand)</li>
+                        <li>Latin</li>
+                        <li>Grec ancien</li>
+                        <li>Section européenne</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="show-more" onclick="toggleVisibility('lycee-general')">Lycée général</span>
+                    <ul id="lycee-general" class="hidden">
+                        <li>Spécialité Mathématiques</li>
+                        <li>Spécialité Physique-Chimie</li>
+                        <li>Spécialité Sciences de la Vie et de la Terre</li>
+                        <li>Spécialité Sciences Économiques et Sociales</li>
+                        <li>Spécialité Histoire-Géographie, Géopolitique et Sciences Politiques</li>
+                        <li>Spécialité Langues, Littératures et Cultures Étrangères</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="show-more" onclick="toggleVisibility('lycee-techno')">Lycée technologique</span>
+                    <ul id="lycee-techno" class="hidden">
+                        <li>STI2D (Sciences et Technologies de l'Industrie et du Développement Durable)</li>
+                        <li>STMG (Sciences et Technologies du Management et de la Gestion)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2024 LE CODE DU SUCCÈS SAINT ALEXANDRE. Tous droits réservés.</p>
+        <p><a href="mentions-legales.html">Mentions légales</a> | <a href="politique-confidentialite.html">Politique de confidentialité</a></p>
+    </footer>
+</body>
+</html>

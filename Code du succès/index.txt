@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - LE CODE DU SUCCÈS SAINT ALEXANDRE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffeb3b; /* couleur de fond jaune */
+        }
+
+        header {
+            background-color: #4caf50; /* couleur verte */
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4caf50; /* couleur verte */
+        }
+
+        .welcome-message {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .welcome-message img {
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .welcome-message p {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-box {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h2 {
+            color: #4caf50; /* couleur verte */
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-box ul li {
+            margin: 10px 0;
+        }
+
+        .staff-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .staff-section img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .staff-info {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .staff-member {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .staff-member h3 {
+            color: #4caf50;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo de l'école">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="niveaux.html">Niveaux d'enseignement</a></li>
+                <li><a href="informations-administratives.html">Informations administratives</a></li>
+                <li><a href="espace-parents.html">Espace parents</a></li>
+                <li><a href="espace-eleves.html">Espace élèves</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Bienvenue à LE CODE DU SUCCÈS SAINT ALEXANDRE</h1>
+        
+        <div class="welcome-message">
+            <img src="images/promoteur.jpg" alt="Photo du promoteur">
+            <p>Bienvenue sur le site de LE CODE DU SUCCÈS SAINT ALEXANDRE. Nous sommes dédiés à offrir une éducation de qualité, en mettant l'accent sur l'excellence académique, l'innovation pédagogique et le développement personnel de chaque élève. Nous vous invitons à explorer notre site pour en savoir plus sur notre mission, nos programmes et les ressources disponibles pour les élèves et les parents.</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="info-box">
+                <h2>Notre mission</h2>
+                <ul>
+                    <li><a href="mission.html#excellence">Excellence académique</a></li>
+                    <li><a href="mission.html#innovation">Innovation pédagogique</a></li>
+                    <li><a href="mission.html#developpement">Développement personnel</a></li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Actualités et événements</h2>
+                <ul>
+                    <li><a href="evenements.html#portes-ouvertes">Journée portes ouvertes</a></li>
+                    <li><a href="evenements.html#conference-pedagogie">Conférence sur la pédagogie</a></li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Galerie multimédia</h2>
+                <ul>
+                    <li><a href="galerie.html#photos">Photos</a></li>
+                    <li><a href="galerie.html#videos">Vidéos</a></li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Ressources en ligne</h2>
+                <ul>
+                    <li><a href="ressources.html#bibliotheque">Bibliothèque numérique</a></li>
+                    <li><a href="ressources.html#cours-en-ligne">Cours en ligne</a></li>
+                    <li><a href="ressources.html#outils-pedagogiques">Outils pédagogiques</a></li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Témoignages</h2>
+                <ul>
+                    <li><a href="temoignages.html#temoignages">Lire les témoignages</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="staff-section">
+            <h2>Notre équipe</h2>
+            <img src="images/staff.jpg" alt="Photo de tout le personnel de l'école">
+            <div class="staff-info">
+                <div class="staff-member">
+                    <h3>Nom Prénom</h3>
+                    <p>Poste occupé</p>
+                </div>
+                <div class="staff-member">
+                    <h3>Nom Prénom</h3>
+                    <p>Poste occupé</p>
+                </div>
+                <div class="staff-member">
+                    <h3>Nom Prénom</h3>
+                    <p>Poste occupé</p>
+                </div>
+                <!-- Ajoutez plus de membres du personnel selon les besoins -->
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        © 2024 LE CODE DU SUCCÈS SAINT ALEXANDRE. Tous droits réservés. | <a href="mentions-legales.html">Mentions légales</a> | <a href="politique-confidentialite.html">Politique de confidentialité</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Élèves - LE CODE DU SUCCÈS SAINT ALEXANDRE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8dc; /* couleur de fond jaune clair */
+        }
+
+        header {
+            background-color: #ffeb3b; /* couleur de fond jaune */
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4caf50; /* couleur verte */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-box {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h2 {
+            color: #4caf50; /* couleur verte */
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-box ul li {
+            margin: 10px 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container a, .login-button {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form label {
+            margin: 10px 0 5px;
+        }
+
+        .login-form input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-form a {
+            text-align: right;
+            color: #4caf50;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .login-form a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        footer {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="niveaux.html">Niveaux d'enseignement</a></li>
+                <li><a href="informations-administratives.html">Informations administratives</a></li>
+                <li><a href="espace-parents.html">Espace parents</a></li>
+                <li><a href="espace-eleves.html">Espace élèves</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Espace Élèves</h1>
+        <div class="grid-container">
+            <div class="info-box">
+                <h2>Connexion à l'espace élève</h2>
+                <form class="login-form">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password">
+                    <a href="#">Mot de passe oublié ?</a>
+                    <div class="button-container">
+                        <button type="submit" class="login-button">Se connecter</button>
+                    </div>
+                </form>
+            </div>
+            <div class="info-box">
+                <h2>Fonctionnalités de l'espace élève</h2>
+                <ul>
+                    <li>Consultation des notes et des évaluations</li>
+                    <li>Accès à l'emploi du temps personnalisé</li>
+                    <li>Téléchargement des cours et des ressources pédagogiques</li>
+                    <li>Remise des devoirs en ligne</li>
+                    <li>Participation aux forums de discussion par matière</li>
+                    <li>Accès à la bibliothèque numérique</li>
+                    <li>Suivi des absences et des retards</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Actualités et événements</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Événement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5 septembre 2023</td>
+                            <td>Journée d'intégration : Participez à des activités ludiques pour faire connaissance avec vos camarades et l'équipe pédagogique.</td>
+                        </tr>
+                        <tr>
+                            <td>12 octobre 2023</td>
+                            <td>Atelier CV et lettre de motivation : Apprenez à rédiger un CV efficace et une lettre de motivation convaincante avec notre conseiller d'orientation.</td>
+                        </tr>
+                        <tr>
+                            <td>25 novembre 2023</td>
+                            <td>Compétition de mathématiques : Testez vos compétences en mathématiques lors de notre compétition annuelle. De nombreux prix à gagner !</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="info-box">
+                <h2>Ressources pour les élèves</h2>
+                <ul>
+                    <li><a href="guide-de-letudiant.pdf">Guide de l'étudiant</a></li>
+                    <li><a href="bibliotheque-numerique.html">Bibliothèque numérique</a></li>
+                    <li><a href="programme-de-tutorat.pdf">Programme de tutorat</a></li>
+                    <li><a href="service-dorientation.html">Service d'orientation</a></li>
+                    <li><a href="clubs-et-associations.html">Clubs et associations étudiantes</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        © 2024 LE CODE DU SUCCÈS SAINT ALEXANDRE. Tous droits réservés. | <a href="mentions-legales.html">Mentions légales</a> | <a href="politique-confidentialite.html">Politique de confidentialité</a>
+    </footer>
+</body>
+</html>

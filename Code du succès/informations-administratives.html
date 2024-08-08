@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations administratives - LE CODE DU SUCCÈS SAINT ALEXANDRE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8dc; /* couleur de fond jaune clair */
+        }
+
+        header {
+            background-color: #ffeb3b; /* couleur de fond jaune */
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4caf50; /* couleur verte */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-box {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h2 {
+            color: #4caf50; /* couleur verte */
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-box ul li {
+            margin: 10px 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .show-more {
+            color: #4caf50; /* couleur verte */
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #4caf50; /* couleur verte */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .download-link::before {
+            content: '➡ ';
+        }
+    </style>
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="niveaux.html">Niveaux d'enseignement</a></li>
+                <li><a href="informations-administratives.html">Informations administratives</a></li>
+                <li><a href="espace-parents.html">Espace parents</a></li>
+                <li><a href="espace-eleves.html">Espace élèves</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Informations administratives</h1>
+        <div class="grid-container">
+            <div class="info-box">
+                <h2>Inscriptions et Admissions</h2>
+                <ul>
+                    <li>Procédure d'inscription</li>
+                    <li>Documents requis</li>
+                    <li>Dates limites</li>
+                    <li>Frais de scolarité</li>
+                    <li>Bourses et aides financières</li>
+                </ul>
+                <div class="button-container">
+                    <a href="info-inscriptions.html">En savoir plus</a>
+                </div>
+            </div>
+            <div class="info-box">
+                <h2>Calendrier Scolaire</h2>
+                <ul>
+                    <li>Dates de rentrée et de sortie</li>
+                    <li>Vacances scolaires</li>
+                    <li>Jours fériés</li>
+                    <li>Événements importants</li>
+                </ul>
+                <div class="button-container">
+                    <a href="calendrier.html">Voir le calendrier</a>
+                </div>
+            </div>
+            <div class="info-box">
+                <h2>Règlement Intérieur</h2>
+                <div class="button-container">
+                    <a href="reglement.html">Consulter le règlement</a>
+                </div>
+            </div>
+            <div class="info-box">
+                <h2>Transport Scolaire</h2>
+                <ul>
+                    <li>Lignes de bus scolaires</li>
+                    <li>Horaires</li>
+                    <li>Tarifs</li>
+                    <li>Inscription au transport</li>
+                </ul>
+                <div class="button-container">
+                    <a href="transport.html">Information transport</a>
+                </div>
+            </div>
+            <div class="info-box">
+                <h2>Documents Administratifs</h2>
+                <ul>
+                    <li><a href="formulaire-inscription.pdf" class="download-link">Formulaire d'inscription</a></li>
+                    <li><a href="fiche-renseignements.pdf" class="download-link">Fiche de renseignements</a></li>
+                    <li><a href="autorisation-sortie.pdf" class="download-link">Autorisation de sortie</a></li>
+                    <li><a href="demande-bourse.pdf" class="download-link">Demande de bourse</a></li>
+                    <li><a href="reglement.pdf" class="download-link">Règlement intérieur</a></li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Foire aux questions (FAQ)</h2>
+                <ul>
+                    <li>
+                        <span class="show-more" onclick="toggleVisibility('faq1')">Comment puis-je inscrire mon enfant à l'école ?</span>
+                        <p id="faq1" class="hidden">Pour inscrire votre enfant, vous devez d'abord remplir le formulaire d'inscription en ligne ou le télécharger depuis notre site. Ensuite, vous devez nous fournir les documents requis et prendre rendez-vous avec notre service administratif.</p>
+                    </li>
+                    <li>
+                        <span class="show-more" onclick="toggleVisibility('faq2')">Quels sont les horaires de l'école ?</span>
+                        <p id="faq2" class="hidden">Les cours commencent à 8h30 et se terminent à 16h30 du lundi au vendredi. L'école est ouverte à partir de 7h45 pour l'accueil des élèves.</p>
+                    </li>
+                    <li>
+                        <span class="show-more" onclick="toggleVisibility('faq3')">Comment puis-je contacter l'administration de l'école ?</span>
+                        <p id="faq3" class="hidden">Vous pouvez contacter l'administration de l'école par téléphone, par email ou en prenant rendez-vous directement à l'accueil.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2024 LE CODE DU SUCCÈS SAINT ALEXANDRE. Tous droits réservés.</p>
+        <p><a href="mentions-legales.html">Mentions légales</a> | <a href="politique-confidentialite.html">Politique de confidentialité</a></p>
+    </footer>
+</body>
+</html>
